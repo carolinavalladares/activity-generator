@@ -1,0 +1,74 @@
+/* ====General==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background: linear-gradient(45deg, tomato, wheat);
+  color: white;
+}
+/* ====Content==== */
+.title {
+  letter-spacing: 7px;
+  font-size: 30px;
+  text-align: center;
+}
+.container {
+  background-color: white;
+  height: 450px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+.label {
+  color: tomato;
+  font-size: 18px;
+  font-weight: 500;
+}
+.txt {
+  color: rgb(77, 77, 77);
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid tomato;
+  text-transform: capitalize;
+}
+
+/* ====Button==== */
+.btn {
+  color: white;
+  font-weight: 500;
+  background: linear-gradient(45deg, tomato, rgb(218, 193, 147));
+  border: none;
+  padding: 0.7em;
+  font-size: 1.1em;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* ====Media Query===== */
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 300px;
+  }
+}
